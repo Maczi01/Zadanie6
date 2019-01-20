@@ -1,9 +1,9 @@
 public class Device {
 
-    String code;
-    String producer;
-    String type;
-    double price;
+    private String code;
+    private String producer;
+    private String type;
+    private double price;
 
     public Device(String code, String producer, String type) {
         this.code = code;
@@ -12,9 +12,7 @@ public class Device {
     }
 
     public Device(String code, String producer, String type, double price) {
-        this.code = code;
-        this.producer = producer;
-        this.type = type;
+        this(code, producer, type);
         this.price = price;
     }
 
